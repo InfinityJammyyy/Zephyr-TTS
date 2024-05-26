@@ -8,21 +8,22 @@ echo "Grabbing the stablelm-zephyr LLM with ollama."
 ollama pull stablelm-zephyr
 echo "Installing ollama module, and the coqui-tts module with pip."
 pip install ollama coqui-tts --break-system-packages
+sudo pip install ollama coqui-tts --break-system-packages
 echo "Installing Mplayer with your package manager."
 
 if [ -x "$(command -v apt-get)" ]; then
-apt-get update -y
-apt-get install mplayer -y
+sudo apt-get update -y
+sudo apt-get install mplayer -y
 echo "Installation complete!"
 
 elif [ -x "$(command -v pacman)" ]; then
-pacman -Syu -y
-pacman -S mplayer -y
+sudo pacman -Syu -y
+sudo pacman -S mplayer -y
 echo "Installation complete!"
 
 elif [ -x "$(command -v pkg)" ]; then
-pkg update -y
-pkg install mplayer -y
+sudo pkg update -y
+sudo pkg install mplayer -y
 echo "Installation complete!"
 
 else
