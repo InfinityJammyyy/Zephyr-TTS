@@ -10,15 +10,19 @@ First start by git cloning the github project, you can do that with this command
 
 Then "cd" into the directory and "ls" to show the files, you should see three files labeled:
 
-"bash.sh" "README.md" aka the thing you are reading right now, and "ZTS.py"
+"Install.sh" "Uninstall.sh" "README.md" aka the thing you are reading right now, and "ZTS.py"
 
-For an automated install simply execute the bash.sh file by cd-ing into the directory it is in and run:
+For an automated install simply execute the Install.sh file by cd-ing into the directory it is in and run:
 
-"chmod +x bash.sh"
+"chmod +x Install.sh"
 
-"./bash.sh"
+"./Install.sh"
 
 This installs all the gadgets and gizmos that the script needs to function and makes it executable!
+
+# Un-installation:
+
+To uninstall this program run "./Uninstall.sh" in your terminal in the cloned github repo, then delete the repo, thats all, sorry to see you go.
 
 # Usage:
 
