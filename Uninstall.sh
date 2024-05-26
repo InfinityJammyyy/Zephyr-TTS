@@ -14,7 +14,6 @@ sudo userdel ollama && \
 sudo groupdel ollama
 
 echo "Uninstalling coqui-tts module with pip."
-pip uninstall coqui-tts --break-system-packages -y
 sudo pip uninstall coqui-tts --break-system-packages -y
 echo "Uninstalling Mplayer with your package manager."
 
