@@ -7,7 +7,7 @@ echo "Uninstalling ollama"
 ollama uninstall
 
 echo "Uninstalling coqui-tts module with pip."
-pip uninstall coqui-tts -y
+pip uninstall coqui-tts --break-system-packages -y
 
 echo "Uninstalling Mplayer with your package manager."
 
