@@ -20,7 +20,7 @@ def process_input():
     user_input = ""
 
     while True:
-        subprocess.run(["sudo", "echo"])  # Dummy command to maintain sudo session
+        subprocess.run(["sudo", "echo"]) 
 
         if not multi_sentence_mode:
             user_input = input("Chat here to stablelm's zephyr:\n\n")
@@ -28,7 +28,7 @@ def process_input():
                 multi_sentence_mode = True
                 user_input = ""
         else:
-            print("Enter your sentences (type 'stop' to finish):\n\n")
+            print("Enter your sentences (type 'stop' to finish):\n")
             while True:
                 sentence = input()
                 if sentence.lower() == "stop":
