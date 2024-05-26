@@ -22,7 +22,7 @@ This installs all the gadgets and gizmos that the script needs to function and m
 
 # Un-installation:
 
-To uninstall this program run "./Uninstall.sh" in your terminal in the cloned github repo, then delete the repo, thats all, sorry to see you go.
+To uninstall this program run "chmod +x Uninstall.sh" "./Uninstall.sh" in your terminal in the cloned github repo, then delete the repo, thats all, sorry to see you go.
 
 # Usage:
 
