@@ -6,7 +6,7 @@ A simple TTS for stablelm-zephyr, perfect for low powered devices like the raspb
 For this you need an internet connection and
 First start by git cloning the github project you can do that with this command:
 
-git clone placeholder
+git clone github.com/InfinityJammyyy/Zephyr-TTS.git
 
 Then "cd" into the directory and "ls" to show the files, you should see three files labeled:
 
