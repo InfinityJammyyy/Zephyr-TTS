@@ -5,6 +5,8 @@ sudo mkdir -p ~/LLM-TTS
 echo "Installing ollama"
 curl -fsSL https://ollama.com/install.sh | sh
 echo "Grabbing the stablelm-zephyr LLM with ollama."
+sudo systemctl enable ollama
+sudo systemctl start ollama
 ollama pull stablelm-zephyr
 echo "Installing ollama module, and the coqui-tts module with pip."
 pip install ollama coqui-tts --break-system-packages
