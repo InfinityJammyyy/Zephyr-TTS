@@ -38,7 +38,7 @@ def process_input():
                 user_input += sentence + " "
 
         if user_input.strip():
-            print("\n\nSubmitting to Zephyr")
+            print("\nSubmitting to Zephyr")
             ollama_output = ollama.chat(model='stablelm-zephyr', messages=[{'role': 'user', 'content': user_input}])['message']['content']
             out_path = os.path.expanduser("~/LLM-TTS/speech.wav")
             generate_speech(ollama_output, out_path)
