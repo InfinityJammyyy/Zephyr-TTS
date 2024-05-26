@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Removing LLM-TTS folder from home directory."
-rm -rf ~/LLM-TTS
+sudo rm -rf ~/LLM-TTS
 
 echo "Uninstalling ollama"
 
@@ -15,19 +15,19 @@ sudo groupdel ollama
 
 echo "Uninstalling coqui-tts module with pip."
 pip uninstall coqui-tts --break-system-packages -y
-
+sudo pip uninstall coqui-tts --break-system-packages -y
 echo "Uninstalling Mplayer with your package manager."
 
 if [ -x "$(command -v apt-get)" ]; then
-    apt-get remove mplayer -y
+    sudo apt-get remove mplayer -y
     echo "Uninstallation complete!"
 
 elif [ -x "$(command -v pacman)" ]; then
-    pacman -Rs mplayer -y
+    sudo pacman -Rs mplayer -y
     echo "Uninstallation complete!"
 
 elif [ -x "$(command -v pkg)" ]; then
-    pkg remove mplayer -y
+    sudo pkg remove mplayer -y
     echo "Uninstallation complete!"
 
 else
