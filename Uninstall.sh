@@ -4,7 +4,14 @@ echo "Removing LLM-TTS folder from home directory."
 rm -rf ~/LLM-TTS
 
 echo "Uninstalling ollama"
-ollama uninstall
+
+sudo systemctl stop ollama && \
+sudo systemctl disable ollama && \
+sudo rm /etc/systemd/system/ollama.service && \
+sudo rm $(which ollama) && \
+sudo rm -r /usr/share/ollama && \
+sudo userdel ollama && \
+sudo groupdel ollama
 
 echo "Uninstalling coqui-tts module with pip."
 pip uninstall coqui-tts --break-system-packages -y
