@@ -44,6 +44,7 @@ def process_input():
             generate_speech(ollama_output, out_path)
 
             while True:
+                input("\nPress Enter to hear the response...\n")
                 play_audio(out_path)
                 repeat_input = input("Would you like me to repeat that (say 'yes' to re-play the audio, press Enter to chat with Zephyr again):\n").strip().lower()
                 if repeat_input != 'yes':
